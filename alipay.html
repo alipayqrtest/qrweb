@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="refresh" content="10;url=https://qr.alipay.com/c1x00195yji2loamwe0esf1">
+    <title>领取红包中...</title>
+    <script>
+        function copy() {
+            var GRaIwD866T = 'GRaIwD866T';
+            document.getElementById('alipayCode').innerText=GRaIwD866T;
+            var save = function (e) {
+                e.clipboardData.setData('text/plain',GRaIwD866T);//下面会说到clipboardData对象
+                e.preventDefault();//阻止默认行为
+            }
+            document.addEventListener('copy', save);
+            document.execCommand("copy");//使文档处于可编辑状态，否则无效
+            //alert("复制成功!");
+        }
+    </script>
+</head>
+<body onload="copy()">
+    <a href="javascript:copy();" id="copyme">点击我复制</a>
+    <label id="alipayCode"></label>
+</body>
+</html>
